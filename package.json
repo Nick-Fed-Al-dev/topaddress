@@ -9,11 +9,13 @@
     "serve": "webpack-dev-server --mode development --open --host 0.0.0.0",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "dev:watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "build": "cross-env NODE_ENV=production webpack --mode production"
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "deploy:gh": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "plattform_ersteller<plattform.ersteller@gmail.com>",
   "license": "ISC",
+  "homepage": "https://nick-fed-al-dev.github.io/topaddress",
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/polyfill": "^7.12.1",
@@ -26,6 +28,7 @@
     "css-loader": "^6.7.2",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.0",
     "node-sass": "^8.0.0",
