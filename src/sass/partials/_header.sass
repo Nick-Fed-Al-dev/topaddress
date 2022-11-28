@@ -1,0 +1,164 @@
+@import "../colors"
+
+.header
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  height: 80px
+  padding-right: 20px
+  z-index: 1
+  padding-left: 20px
+  font-weight: 300
+  font-size: 12px
+
+  .header-line
+    width: 100%
+    position: absolute
+    left: 0
+    top: 80px
+    z-index: 4
+    height: 1px
+    background-color: white
+    opacity: 0.4
+
+  .logo
+    z-index: 3
+    cursor: pointer
+
+  .burger-menu
+    display: none
+
+  .header-nav
+    width: 45%
+    margin-right: 10%
+    min-width: 300px
+    margin-left: 20px
+    height: 100%
+
+  .header-social
+    width: 26%
+    max-width: 300px
+
+  ul
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: inherit
+
+  .header-nav-item
+    display: flex
+    align-items: center
+    flex-direction: column
+    height: inherit
+    position: relative
+    cursor: pointer
+
+    div:first-child
+      margin-top: 30px
+
+    div:last-child
+      width: 200px !important
+      height: 200px
+      background-color: rgba(255,255,255,0.5)
+      position: absolute
+      top: 80px
+      display: none
+
+  .header-nav-item:hover
+    border-bottom: 2px solid white
+
+    & div:last-child
+      display: flex
+
+
+
+@media (max-width: 10920px)
+
+  .header-social-item:nth-child(2)
+    display: none
+
+  .header-social-item:nth-child(3)
+    display: none
+
+  .header-social-item:nth-child(5)
+    display: none
+
+  .header-social-item:nth-child(6)
+    display: none
+
+  .header-burger
+    display: none
+
+@media (max-width: 1024px)
+
+  .header
+    font-size: 9px
+
+  .header-social-item:nth-child(1)
+    display: none
+
+  .header-social-item:nth-child(2)
+    display: block
+
+  .header-social-item:nth-child(4)
+    display: none
+
+  .header-social-item:nth-child(5)
+    display: block
+
+  .header-nav
+    margin-right: 20px !important
+
+  .header-social
+    min-width: 120px
+    width: 20% !important
+
+  .logo svg
+    width: 110px !important
+
+@media (max-width: 600px)
+  .header-nav
+    display: none
+
+  .header-social-item:nth-child(2)
+    display: none
+
+  .header-social-item:nth-child(3)
+    display: block
+
+  .header-social-item:nth-child(6)
+    display: block
+
+  .header-social-item:nth-child(7)
+    display: none
+
+  .header-social-item:nth-child(5)
+    display: none
+
+  .header-social
+    min-width: 110px
+
+  .header-burger
+    display: flex
+    z-index: 3
+
+  .burger-menu
+    display: flex !important
+    position: fixed
+    left: 0
+    right: 0
+    top: -100vh
+    height: 100vh
+    width: 100%
+    transition: top 1s ease
+    background-color: $dark_purple
+    z-index: 3
+
+.burger-menu-open
+  top: 0
+
+.header-fixed
+    position: fixed !important
+    background-color: $dark_purple !important

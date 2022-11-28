@@ -1,0 +1,121 @@
+@import "../colors"
+
+.main-hero
+  width: 100%
+  height: 700px
+  position: relative
+
+.main-hero-img
+  width: inherit
+  position: absolute
+  height: inherit
+  object-fit: cover
+
+.main-hero-certain
+  pointer-events: none
+  width: inherit
+  height: inherit
+  position: absolute
+  z-index: 2
+  background-color: $light_grey
+
+.main-hero-text
+  display: flex
+  position: absolute
+  width: 100%
+  justify-content: center
+  margin-left: -170px
+  align-items: center
+  top: 240px
+
+.main-hero-text-1
+  font-family: Noto, sans-serif
+  font-size: 80px
+  display: flex
+  flex-direction: column
+  line-height: 80px
+  font-weight: 300
+
+  div:nth-child(2)
+    margin-left: 120px
+
+.main-hero-text-2
+  font-family: Caravan, sans-serif
+  margin-top: -200px
+  margin-left: -120px
+  font-weight: 400
+  font-size: 200px
+
+.main-hero-form
+  top: 540px
+  position: absolute
+  left: 100px
+  right: 100px
+  height: 100px
+  display: flex
+
+  .main-hero-form-select
+    width: 27%
+    height: inherit
+    border-right: white 1px solid
+    background-color: rgba(233,233,233,0.4)
+    padding: 10px
+
+  .main-hero-form-button
+    width: 25%
+    height: inherit
+    font-size: 20px
+
+@media (max-width: 1024px)
+
+  .main-hero-text
+    margin-left: -150px
+
+  .main-hero-text-1
+    font-size: 55px
+    line-height: 60px
+
+  .main-hero-text-2
+    font-size: 120px
+
+  .main-hero-form
+    top: 470px
+    height: 80px
+
+  .main-hero-form-button
+    font-size: 12px !important
+
+@media (max-width: 600px)
+
+  .main-hero-text
+    flex-direction: column
+    top: 150px
+
+  .main-hero-form
+    flex-direction: column
+    justify-content: space-between
+    height: 300px
+    top: 350px
+    left: 30px
+    right: 30px
+
+  .main-hero-form-select
+    width: 100% !important
+    margin-top: 30px
+
+  .main-hero-form-button
+    margin-top: 30px
+    width: 100% !important
+    height: 600px !important
+
+  .main-hero-text-1
+    font-size: 35px
+    line-height: 40px
+
+    div:nth-child(2)
+      margin-left: 70px
+
+  .main-hero-text-2
+    margin-top: -30px
+    margin-left: 0
+    font-size: 100px
