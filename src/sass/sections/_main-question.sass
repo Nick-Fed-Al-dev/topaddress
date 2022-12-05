@@ -1,0 +1,238 @@
+@import "../utils/colors"
+@import "../mixins/button"
+
+.question-section
+  position: relative
+  display: flex
+  flex-direction: column
+  background-color: $dark-purple
+  align-items: center
+  width: 100%
+  height: 650px
+
+  .title-line
+    left: 4%
+
+  div:first-child
+    display: flex
+    width: 80%
+    justify-content: space-between
+    align-items: center
+    margin-top: 120px
+    min-width: 940px
+
+
+.question-section-title
+  font-size: 80px
+  line-height: 80px
+  font-family: Noto, sans-serif
+  font-weight: 300
+
+
+.question-section-person
+  display: flex
+
+  img
+    height: 160px
+
+.question-section-person-text
+  padding: 30px
+  display: flex
+  justify-content: center
+  flex-direction: column
+  border: 1px rgba(255, 255, 255, 0.15) solid
+
+
+  h3
+    font-family: Noto, sans-serif
+    font-weight: 300
+    font-size: 30px
+    text-align: left
+    margin-bottom: 10px
+
+.question-section-form
+  margin-top: 120px
+  width: 80%
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  min-width: 1000px
+
+  input
+    height: 30px
+    width: 25%
+    min-width: 260px
+
+  button
+    @include button(15%, 55px, white)
+
+
+.question-section-form-agreement
+  position: absolute
+  top: 490px
+  font-size: 14px
+
+@media (max-width: 1024px)
+
+  .question-section
+
+    .title-line
+      left: 3%
+
+    div:first-child
+      min-width: 700px
+      width: 80%
+
+  .question-section-title
+    font-size: 55px !important
+
+  .question-section-person
+
+    img
+      height: 140px
+
+  .question-section-person-text
+    padding: 20px !important
+    height: 140px
+
+    h3
+      font-size: 22px
+
+    p
+      font-size: 12px
+
+  .question-section-form
+
+    min-width: 600px
+
+    button
+      position: absolute
+      top: 480px
+      right: 10vw
+      height: 70px
+      width: 200px
+
+    input
+      min-width: 180px
+
+  .question-section-form-agreement
+    font-size: 12px
+
+@media (max-width: 800px)
+
+  .question-section-form-agreement
+    top: 360px
+
+  .question-section-title
+    font-size: 36px !important
+    line-height: 36px !important
+
+  .question-section-form
+    min-width: 580px
+
+    button
+      top: 360px
+
+  .question-section
+    height: 480px
+
+    .title-line
+      display: none
+
+    div:first-child
+      min-width: 560px
+      margin-top: 40px !important
+
+  .question-section-person-text
+    padding: 20px !important
+    height: 120px
+
+  .question-section-person
+
+    img
+      height: 120px
+
+@media (max-width: 600px)
+
+  .question-section
+    height: 740px !important
+
+    div:first-child
+      flex-direction: column
+      min-width: 0
+
+  .question-section-person
+    position: absolute
+    left: 10vw
+    top: 550px
+
+  .question-section-person-text
+    padding: 20px
+    width: 52vw
+
+    h3
+      font-size: 18px
+
+    p
+      font-size: 10px
+
+  .question-section-title
+    font-size: 32px  !important
+
+  .question-section-form
+    flex-direction: column
+    align-items: center
+    margin-top: 40px
+    min-width: 0
+
+    button
+      position: relative
+      width: 80vw
+      right: 0
+      left: 0
+      padding-right: 45vw
+      top: 50px
+
+    input
+      margin-bottom: 40px
+      min-width: 0
+      width: 80vw
+
+  .question-section-form-agreement
+    position: absolute
+    left: 10vw
+
+@media (max-width: 400px)
+  .question-section
+    height: 840px !important
+
+    div:first-child
+      align-items: flex-start
+
+  .question-section-form-agreement
+    font-size: 10px
+
+  .question-section-form
+
+    button
+      height: 60px
+
+  .question-section-person
+    flex-direction: column
+    top: 500px
+
+    img
+      width: 80vw
+      height: 300px
+
+  .question-section-person-text
+    margin-top: -120px
+    width: 80vw
+    background-color: $dark_purple
+    align-items: center
+
+    h3
+      font-size: 20px
+
+    p
+      font-size: 12px

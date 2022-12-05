@@ -1,10 +1,13 @@
 import React from "react"
 
-export const Button = ({color, text, className}) => {
+import {ButtonArrow} from "./svg/ButtonArrow"
+
+export const Button = ({className, text}) => {
 
     return (
-        <button className={`btn ${className}`} style={{backgroundColor: color}}>
+        <button className={`${className ?? ""}`} >
             {text}
+            <ButtonArrow />
         </button>
     )
 }

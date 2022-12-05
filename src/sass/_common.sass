@@ -1,4 +1,5 @@
-@import "colors"
+@import "utils/colors"
+@import "utils/typography"
 
 *
   color: white
@@ -13,9 +14,42 @@ ul
   margin-left: 150px
   margin-right: 150px
 
-.btn
-  border: none
-  width: 150px
-  height: 80px
-  background-color: $dark_purple
+
+
+.btn-link
+  padding-top: 4%
+  padding-right: 10%
+
+.btn-arrow
+  position: absolute
+  top: 10px
+  right: 10px
+
+.btn:hover
+  background-color: $dark_purple !important
   color: white
+
+  .btn-arrow
+    path
+      fill: white
+
+.title-line
+  position: absolute
+  width: 1px
+  height: 140px
+  top: 130px
+  left: 5%
+  background-color: white
+  z-index: 4
+
+@media (max-width: 600px)
+  .title-line
+    display: none
+
+.input
+  outline: none
+  background-color: rgba(255, 255, 255, 0)
+  box-shadow: none
+  border: none
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+  padding-bottom: 10px

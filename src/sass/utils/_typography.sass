@@ -1,0 +1,96 @@
+
+$h1: 100px
+$h2: 80px
+$h3: 36px
+$h4: 30px
+$h5: 24px
+$text: 16px
+$small_text: 14px
+
+@media (max-width: 1024px)
+  $h1: 55px
+  $h2: 45px
+  $h3: 25px
+  $h4: 21px
+  $h5: 18px
+  $text: 12px
+  $small_text: 10px
+
+@media (max-width: 375px)
+  $h1: 39px
+  $h2: 35px
+  $h3: 25px
+  $h4: 21px
+  $h5: 18px
+  $text: 12px
+  $small_text: 10px
+
+@mixin h1
+
+  font-size: 100px
+
+  @media (max-width: 1024px)
+    font-size: 55px !important
+
+  @media (max-width: 375px)
+    font-size: 39px !important
+
+@mixin h2
+
+  font-size: 80px
+
+  @media (max-width: 1024px)
+    font-size: 45px !important
+
+  @media (max-width: 375px)
+    font-size: 35px !important
+
+@mixin h3
+
+  font-size: 36px
+
+  @media (max-width: 1024px)
+    font-size: 26px !important
+
+  @media (max-width: 375px)
+    font-size: 26px !important
+
+@mixin h4
+
+  font-size: 30px
+
+  @media (max-width: 1024px)
+    font-size: 21px !important
+
+  @media (max-width: 375px)
+    font-size: 21px !important
+
+@mixin h5
+
+  font-size: 24px
+
+  @media (max-width: 1024px)
+    font-size: 18px !important
+
+  @media (max-width: 375px)
+    font-size: 18px !important
+
+@mixin text
+
+  font-size: 16px
+
+  @media (max-width: 1024px)
+    font-size: 12px !important
+
+  @media (max-width: 375px)
+    font-size: 12px !important
+
+@mixin small_text
+
+  font-size: 14px
+
+  @media (max-width: 1024px)
+    font-size: 10px !important
+
+  @media (max-width: 375px)
+    font-size: 10px !important

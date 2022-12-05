@@ -1,0 +1,302 @@
+@import "../utils/colors"
+
+.footer
+  display: flex
+  flex-direction: column
+  width: 100%
+  position: relative
+  bottom: 0
+  z-index: 2
+
+.footer-map-img
+  width: inherit
+  object-fit: cover
+  height: 600px
+
+.footer-contacts
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 700px
+  background-color: white
+  position: relative
+
+.footer-contacts-title
+  font-family: Noto, sans-serif
+  font-size: 80px
+  font-weight: 300
+  color: $dark_purple
+  margin-top: 100px
+
+.footer-contacts-list
+  display: flex
+  justify-content: space-between
+  width: 80%
+  min-width: 900px
+
+.footer-contacts-item
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-top: 100px
+  height: 200px
+
+.footer-contacts-item-title
+  color: rgba(80, 46, 63, 0.5)
+  font-size: 14px
+  text-align: center
+
+.footer-contacts-item-text
+  font-family: Noto, sans-serif
+  display: flex
+  height: 100px
+  text-align: center
+  align-items: center
+  font-size: 24px
+  color: $dark-purple
+
+.footer-contacts-line
+  position: absolute
+  background-color: rgba(80, 46, 63, 0.5)
+  height: 1px
+  left: 120px
+  right: 120px
+  top: 350px
+
+.footer-contacts-background-img
+  position: absolute
+  width: 600px
+  top: 40px
+
+
+.footer-basement
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  padding-bottom: 80px
+  background-color: $dark-purple
+
+.footer-basement-nav-object-title
+  font-family: Noto, sans-serif
+  font-size: 32px
+  font-weight: 300
+
+.footer-basement-nav
+  display: flex
+  justify-content: space-between
+  width: 80%
+  margin-top: 80px
+
+.footer-basement-nav-object
+  display: flex
+  flex-direction: column
+
+  ul
+    display: flex
+    flex-direction: column
+
+    li
+      margin-top: 20px
+      font-size: 16px
+      font-weight: 300
+
+.footer-basement-social
+  display: flex
+  justify-content: space-between
+  width: 80%
+  margin-top: 80px
+  align-items: center
+
+  ul
+    width: 30%
+    display: flex
+    justify-content: space-between
+
+.footer-basement-conditions
+  display: flex
+  justify-content: space-between
+  border-top: rgba(255, 255, 255, 0.45) 1px solid
+  height: 30px
+  align-items: center
+  width: 80%
+  margin-top: 40px
+  padding-top: 40px
+
+  ul
+    display: flex
+    justify-content: space-between
+    width: 40%
+
+    li
+      font-size: 12px
+      color: rgb(150, 150, 150)
+
+  p
+    font-size: 12px
+    color: rgb(150, 150, 150)
+
+@media (max-width: 1024px)
+
+  .footer-basement-nav
+    width: 90%
+
+  .footer-basement-social
+    width: 90%
+
+    ul
+      min-width: 300px
+
+  .footer-basement-nav-object
+
+    li
+      font-size: 12px !important
+      margin-top: 15px !important
+
+  .footer-basement-conditions
+    width: 90%
+
+    ul
+      min-width: 350px
+      margin-left: 20px
+
+      li
+        font-size: 10px
+
+  .footer-basement-nav-object-title
+    font-size: 22px
+
+  .footer-contacts-title
+    margin-top: 100px !important
+
+  .footer-contacts-item
+    margin-top: 200px
+    height: 200px
+
+  .footer-contacts-line
+    left: 60px
+    right: 60px
+    top: 420px
+
+  .footer-contacts-title
+    font-size: 55px !important
+
+  .footer-contacts-item-text
+    font-size: 18px !important
+    text-wrap: none
+
+  .footer-contacts-list
+    width: 90% !important
+    min-width: 600px !important
+
+@media (max-width: 600px)
+
+  .footer-basement
+    padding-bottom: 0px
+
+    .logo
+      display: flex
+      justify-content: center
+      border-top: rgba(255, 255, 255, 0.15) 1px solid
+      width: 100vw
+      padding-top: 30px
+      padding-bottom: 20px
+
+  .footer-basement-nav
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin-top: 0px
+    width: 100% !important
+
+    ul
+      padding-top: 15px !important
+
+      li
+        font-size: 12px !important
+
+  .footer-basement-nav-object-title
+    font-size: 26px
+
+  .footer-basement-social
+    ul
+      margin-bottom: 60px
+      justify-content: space-between
+      margin-top: -30px
+      width: 80%
+      min-width: auto
+
+  .footer-basement-conditions
+    width: 100%
+    margin-top: 100px
+    margin-bottom: 20px
+    border-top: 1px rgba(255, 255, 255, 0.15) solid !important
+    padding-top: 10px !important
+
+    p
+      font-size: 8px
+
+    ul
+      min-width: 280px !important
+      margin-bottom: 40px !important
+      flex-direction: column
+      align-items: center
+      margin-left: 0 !important
+      margin-top: 80px
+
+      li
+        font-size: 8px
+        margin-top: 20px
+
+  .footer-basement-nav-object
+    align-items: center
+    justify-content: center
+    padding-top: 50px
+    width: 100% !important
+    padding-bottom: 50px
+
+    &:not(&:first-child)
+      border-top: rgba(255, 255, 255, 0.15) 1px solid
+
+  .footer-basement-social
+    flex-direction: column-reverse
+    margin-top: 40px
+
+  .footer-basement-conditions
+    flex-direction: column-reverse
+
+  .footer-contacts-line
+    display: none
+
+  .footer-contacts-list
+    flex-direction: column
+    height: 80%
+    justify-content: space-between
+    margin-top: 0px
+    width: 100% !important
+    min-width: 200px !important
+
+  .footer-contacts-title
+    font-size: 32px !important
+
+  .footer-contacts-item-text
+    justify-content: center
+    align-items: center
+    height: auto !important
+    margin-top: 10px
+    font-size: 18px !important
+
+  .footer-contacts-item
+    justify-content: center !important
+    display: flex
+    margin-top: 0
+
+  .footer-contacts-item:not(.footer-contacts-item:first-child)
+    border-top: rgba(80, 46, 63, 0.15) 1px solid
+
+  .footer-contacts-item-title
+    font-size: 10px
+
+  .footer-contacts
+    img
+      width: 300px

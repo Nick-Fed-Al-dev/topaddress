@@ -1,0 +1,50 @@
+@import "../utils/colors"
+@import "../utils/typography"
+
+@mixin button($width : 242px, $height : 80px, $color : $dark_purple, $is_link : false)
+
+  $text_color: white
+  $border_color: transparent
+
+  $hover_color: white
+  $hover_text_color: $dark_purple
+  $hover_border_color: $dark_purple
+
+  @if ($color == white)
+    $text_color: $dark_purple
+    $border_color: $dark_purple
+    $hover_color: $dark_purple
+    $hover_text_color: white
+    $hover_border_color: transparent
+
+  position: relative
+  width: $width
+  height: $height
+  background-color: $color
+  color: $text_color
+  border: 1px solid $border_color
+  @include text
+
+  svg
+    display: none
+
+  &:hover
+    background-color: $hover_color
+    color: $hover_text_color
+    border: 1px solid $dark_purple
+
+    path
+      fill: $hover_text_color
+
+  @if($is_link)
+    padding-top: calc(1/12) + 0%
+    padding-right: calc(27/97) + 0%
+
+    svg
+      display: block
+      position: absolute
+      top: 13px
+      right: 13px
+
+      path
+        fill: $text_color
